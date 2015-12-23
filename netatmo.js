@@ -121,7 +121,7 @@ netatmo.prototype.getAccessToken = function(callback) {
 netatmo.prototype.authenticate_refresh = function(refresh_token) {
   debug("Refresh token ...");
 
-  var args = self._args;
+  var args = this._args;
 
   var form = {
     grant_type : 'refresh_token',
